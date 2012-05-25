@@ -1,55 +1,46 @@
 <div data-role="page">
+<div data-role="header" data-position="inline">
+<h1>New <%= @kegs.title %></h1>
+<a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">Cancel</a>
+</div>
 
-  <div data-role="header" data-position="inline">
-    <h1>New <%= @kegs.title %></h1>
-    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
-      Cancel
-    </a>
-  </div>
+<div data-role="content">
+<form method="POST" action="<%= url_for :action => :create %>">
+<input type="hidden" name="id" value="<%= @kegs.object %>"/>
 
-  <div data-role="content">
-    <form method="POST" action="<%= url_for :action => :create %>">
-      <input type="hidden" name="id" value="<%= @kegs.object %>"/>
+<div data-role="fieldcontain">
+<label for="kegs[name]" class="fieldLabel">Name</label>
+<input type="text" id="kegs[name]" name="kegs[name]" <%= placeholder("Name") %> />
+</div>
+	
+<div data-role="fieldcontain">
+<label for="kegs[ratingsCount]" class="fieldLabel">Ratings Count</label>
+<input type="text" id="kegs[ratingsCount]" name="kegs[ratingsCount]" <%= placeholder("Ratings Count") %> />
+</div>
 
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[name]" class="fieldLabel">Name</label>
-            <input type="text" id="kegs[name]" name="kegs[name]" <%= placeholder("Name") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[image_url]" class="fieldLabel">Image url</label>
-            <input type="text" id="kegs[image_url]" name="kegs[image_url]" <%= placeholder("Image url") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[keg_volume_size_ml]" class="fieldLabel">Keg volume size ml</label>
-            <input type="text" id="kegs[keg_volume_size_ml]" name="kegs[keg_volume_size_ml]" <%= placeholder("Keg volume size ml") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[keg_volume_remaining_ml]" class="fieldLabel">Keg volume remaining ml</label>
-            <input type="text" id="kegs[keg_volume_remaining_ml]" name="kegs[keg_volume_remaining_ml]" <%= placeholder("Keg volume remaining ml") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[keg_volume_spilled_ml]" class="fieldLabel">Keg volume spilled ml</label>
-            <input type="text" id="kegs[keg_volume_spilled_ml]" name="kegs[keg_volume_spilled_ml]" <%= placeholder("Keg volume spilled ml") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[status]" class="fieldLabel">Status</label>
-            <input type="text" id="kegs[status]" name="kegs[status]" <%= placeholder("Status") %> />
-          </div>
-      
-          <div data-role="fieldcontain">
-            <label for="kegs[url]" class="fieldLabel">Url</label>
-            <input type="text" id="kegs[url]" name="kegs[url]" <%= placeholder("Url") %> />
-          </div>
-      
+<div data-role="fieldcontain">
+<label for="kegs[ratingsTotal]" class="fieldLabel">Ratings Total</label>
+<input type="text" id="kegs[ratingsTotal]" name="kegs[ratingsTotal]" <%= placeholder("Ratings Total") %> />
+</div>
 
-      <input type="submit" value="Create"/>
-    </form>
-  </div>
+<div data-role="fieldcontain">
+<label for="kegs[volumeAdjusted]" class="fieldLabel">Volume Adjusted</label>
+<input type="text" id="kegs[volumeAdjusted]" name="kegs[volumeAdjusted]" <%= placeholder("Volume Adjusted") %> />
+</div>
 
+<div data-role="fieldcontain">
+<label for="kegs[volumePoured]" class="fieldLabel">Volume Poured</label>
+<input type="text" id="kegs[volumePoured]" name="kegs[volumePoured]" <%= placeholder("Volume Poured") %> />
+</div>
+	
+<div data-role="fieldcontain">
+<label for="kegs[volumeTotal]" class="fieldLabel">Volume Total</label>
+<input type="text" id="kegs[volumeTotal]" name="kegs[volumeTotal]" <%= placeholder("Volume Total") %> />
+</div>
+
+<input type="submit" value="Create"/>
+
+</form>
+
+</div>
 </div>
