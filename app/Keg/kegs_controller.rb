@@ -1,7 +1,7 @@
 require 'rho/rhocontroller'
 require 'helpers/browser_helper'
 
-class KegsController < Rho::RhoController
+class KegController < Rho::RhoController
   include BrowserHelper
 
   # GET /Kegs
