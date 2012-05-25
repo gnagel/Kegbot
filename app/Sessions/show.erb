@@ -1,0 +1,44 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @sessions.name %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      Back
+    </a>
+    <a href="<%= url_for :action => :edit, :id => @sessions.object %>" class="ui-btn-right" data-icon="star">
+      Edit
+    </a>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      
+          <li>
+            <div class="itemLabel">Name</div>
+            <div class="itemValue"><%= @sessions.name %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">StartTimestamp</div>
+            <div class="itemValue"><%= @sessions.start_timestamp %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">EndTimestamp</div>
+            <div class="itemValue"><%= @sessions.end_timestamp %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Slug</div>
+            <div class="itemValue"><%= @sessions.slug %></div>
+          </li>
+      
+          <li>
+            <div class="itemLabel">Url</div>
+            <div class="itemValue"><%= @sessions.url %></div>
+          </li>
+      
+    </ul>
+  </div>
+
+</div>

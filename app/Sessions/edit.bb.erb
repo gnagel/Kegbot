@@ -1,0 +1,44 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :show, :id => @sessions.object %>
+    <h1>Edit <%= @sessions.name%></h1>
+    <%= link_to "Delete", :action => :delete, :id => @sessions.object %>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @sessions.object %>"/>
+      <table>
+          
+          <tr>
+              <td class="itemLabel">Name: </td>
+              <td class="itemValue"><input type="text" name="sessions[name]" value="<%= @sessions.name %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Start timestamp: </td>
+              <td class="itemValue"><input type="text" name="sessions[start_timestamp]" value="<%= @sessions.start_timestamp %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">End timestamp: </td>
+              <td class="itemValue"><input type="text" name="sessions[end_timestamp]" value="<%= @sessions.end_timestamp %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Slug: </td>
+              <td class="itemValue"><input type="text" name="sessions[slug]" value="<%= @sessions.slug %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Url: </td>
+              <td class="itemValue"><input type="text" name="sessions[url]" value="<%= @sessions.url %>"/></td>
+          </tr>
+          
+      </table>
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+{
+  "result": {
+    "last_temp": 25.3125, 
+    "sensor": {
+      "nice_name": "", 
+      "sensor_name": "kegboard.thermo-a50000040b101928", 
+      "id": "1"
+    }, 
+    "last_time": "2012-05-25T21:20:00Z"
+  }
+}

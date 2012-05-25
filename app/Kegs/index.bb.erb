@@ -2,16 +2,16 @@
 
   <div data-role="header" data-position="inline">
     <%= link_to "New", :action => :new %>
-    <h1>Drinks</h1>
+    <h1>Kegses</h1>
     <%= link_to "Home", RhoConfig::start_path %>
   </div>
 
   <div data-role="content">
     <table>
       <tr>
-      <% @drinks.each do |obj| %>
+      <% @kegses.each do |obj| %>
         
-            <td class="recordLabel"><%= link_to "#{obj.duration}", :action => :show, :id => obj.object %></td>
+            <td class="recordLabel"><%= link_to "#{obj.name}", :action => :show, :id => obj.object %></td>
         
       <% end %>
       </tr>

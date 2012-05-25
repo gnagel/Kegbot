@@ -1,58 +1,58 @@
 require 'rho/rhocontroller'
 require 'helpers/browser_helper'
 
-class DrinkController < Rho::RhoController
+class DrinksController < Rho::RhoController
   include BrowserHelper
 
-  # GET /Drink
+  # GET /Drinks
   def index
-    @drinks = Drink.find(:all)
+    @drinkses = Drinks.find(:all)
     render :back => '/app'
   end
 
-  # GET /Drink/{1}
+  # GET /Drinks/{1}
   def show
-    @drink = Drink.find(@params['id'])
-    if @drink
+    @drinks = Drinks.find(@params['id'])
+    if @drinks
       render :action => :show, :back => url_for(:action => :index)
     else
       redirect :action => :index
     end
   end
 
-  # GET /Drink/new
+  # GET /Drinks/new
   def new
-    @drink = Drink.new
+    @drinks = Drinks.new
     render :action => :new, :back => url_for(:action => :index)
   end
 
-  # GET /Drink/{1}/edit
+  # GET /Drinks/{1}/edit
   def edit
-    @drink = Drink.find(@params['id'])
-    if @drink
+    @drinks = Drinks.find(@params['id'])
+    if @drinks
       render :action => :edit, :back => url_for(:action => :index)
     else
       redirect :action => :index
     end
   end
 
-  # POST /Drink/create
+  # POST /Drinks/create
   def create
-    @drink = Drink.create(@params['drink'])
+    @drinks = Drinks.create(@params['drinks'])
     redirect :action => :index
   end
 
-  # POST /Drink/{1}/update
+  # POST /Drinks/{1}/update
   def update
-    @drink = Drink.find(@params['id'])
-    @drink.update_attributes(@params['drink']) if @drink
+    @drinks = Drinks.find(@params['id'])
+    @drinks.update_attributes(@params['drinks']) if @drinks
     redirect :action => :index
   end
 
-  # POST /Drink/{1}/delete
+  # POST /Drinks/{1}/delete
   def delete
-    @drink = Drink.find(@params['id'])
-    @drink.destroy if @drink
+    @drinks = Drinks.find(@params['id'])
+    @drinks.destroy if @drinks
     redirect :action => :index  
   end
 end

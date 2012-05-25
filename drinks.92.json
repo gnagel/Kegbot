@@ -1,0 +1,39 @@
+{
+  "result": {
+    "keg": {
+      "status": "online", 
+      "volume_ml_remain": -9347.454448476608, 
+      "finished_time": "2012-05-22T01:44:23Z", 
+      "description": "", 
+      "type_id": "2be52330-a3b0-11e1-8923-002219f4ec73", 
+      "url": "/kegs/1", 
+      "started_time": "2012-05-22T01:44:23Z", 
+      "size_id": "2", 
+      "percent_full": 0, 
+      "size_name": "Import Keg (European barrel)", 
+      "spilled_ml": 0.0, 
+      "id": "1", 
+      "size_volume_ml": 49967.4355515234
+    }, 
+    "drink": {
+      "status": "valid", 
+      "volume_ml": 269.96, 
+      "url": "/drinks/92", 
+      "ticks": 68, 
+      "session_id": "17", 
+      "pour_time": "2012-05-25T21:05:18Z", 
+      "duration": 16, 
+      "keg_id": "1", 
+      "id": "92"
+    }, 
+    "session": {
+      "name": "Session 17", 
+      "url": "/session/2012-05-25/17/session-17", 
+      "start_time": "2012-05-25T20:45:30Z", 
+      "volume_ml": 1544.33, 
+      "id": "17", 
+      "end_time": "2012-05-25T22:45:52Z", 
+      "slug": "session-17"
+    }
+  }
+}

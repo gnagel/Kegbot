@@ -1,0 +1,56 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Edit <%= @kegs.name %></h1>
+    <a href="<%= url_for :action => :show, :id => @kegs.object %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @kegs.object %>" class="ui-btn-right" data-icon="delete" data-direction="reverse">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @kegs.object %>"/>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[name]" class="fieldLabel">Name</label>
+            <input type="text" id="kegs[name]" name="kegs[name]" value="<%= @kegs.name %>" <%= placeholder( "Name" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[image_url]" class="fieldLabel">Image url</label>
+            <input type="text" id="kegs[image_url]" name="kegs[image_url]" value="<%= @kegs.image_url %>" <%= placeholder( "Image url" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[keg_volume_size_ml]" class="fieldLabel">Keg volume size ml</label>
+            <input type="text" id="kegs[keg_volume_size_ml]" name="kegs[keg_volume_size_ml]" value="<%= @kegs.keg_volume_size_ml %>" <%= placeholder( "Keg volume size ml" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[keg_volume_remaining_ml]" class="fieldLabel">Keg volume remaining ml</label>
+            <input type="text" id="kegs[keg_volume_remaining_ml]" name="kegs[keg_volume_remaining_ml]" value="<%= @kegs.keg_volume_remaining_ml %>" <%= placeholder( "Keg volume remaining ml" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[keg_volume_spilled_ml]" class="fieldLabel">Keg volume spilled ml</label>
+            <input type="text" id="kegs[keg_volume_spilled_ml]" name="kegs[keg_volume_spilled_ml]" value="<%= @kegs.keg_volume_spilled_ml %>" <%= placeholder( "Keg volume spilled ml" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[status]" class="fieldLabel">Status</label>
+            <input type="text" id="kegs[status]" name="kegs[status]" value="<%= @kegs.status %>" <%= placeholder( "Status" ) %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="kegs[url]" class="fieldLabel">Url</label>
+            <input type="text" id="kegs[url]" name="kegs[url]" value="<%= @kegs.url %>" <%= placeholder( "Url" ) %> />
+          </div>
+      
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

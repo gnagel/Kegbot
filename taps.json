@@ -1,0 +1,55 @@
+{
+  "result": {
+    "taps": [
+      {
+        "keg": {
+          "status": "online", 
+          "volume_ml_remain": -9347.454448476608, 
+          "finished_time": "2012-05-22T01:44:23Z", 
+          "description": "", 
+          "type_id": "2be52330-a3b0-11e1-8923-002219f4ec73", 
+          "url": "/kegs/1", 
+          "started_time": "2012-05-22T01:44:23Z", 
+          "size_id": "2", 
+          "percent_full": 0, 
+          "size_name": "Import Keg (European barrel)", 
+          "spilled_ml": 0.0, 
+          "id": "1", 
+          "size_volume_ml": 49967.4355515234
+        }, 
+        "beer_type": {
+          "name": "Stella Artois", 
+          "style_id": "1a41a234-a3b0-11e1-b206-002219f4ec73", 
+          "image": {
+            "url": "/media/beerdb/e14e-STELLA.gif", 
+            "width": 399, 
+            "height": 327
+          }, 
+          "edition": "", 
+          "abv": 5.2, 
+          "brewer_id": "f9fb2fe0-a3af-11e1-8cd4-002219f4ec73", 
+          "id": "2be52330-a3b0-11e1-8923-002219f4ec73"
+        }, 
+        "tap": {
+          "meter_name": "kegboard.flow0", 
+          "description": "", 
+          "ml_per_tick": 3.97, 
+          "relay_name": "", 
+          "current_keg_id": "1", 
+          "id": "1", 
+          "name": "Main Tap"
+        }, 
+        "brewer": {
+          "origin_city": "", 
+          "name": "InBev", 
+          "url": "", 
+          "country": "BEL", 
+          "production": "commercial", 
+          "origin_state": "", 
+          "id": "f9fb2fe0-a3af-11e1-8cd4-002219f4ec73", 
+          "description": "By request of Ross Cohen\r\n\r\n"
+        }
+      }
+    ]
+  }
+}

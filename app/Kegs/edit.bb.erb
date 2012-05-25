@@ -1,0 +1,54 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :show, :id => @kegs.object %>
+    <h1>Edit <%= @kegs.name%></h1>
+    <%= link_to "Delete", :action => :delete, :id => @kegs.object %>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @kegs.object %>"/>
+      <table>
+          
+          <tr>
+              <td class="itemLabel">Name: </td>
+              <td class="itemValue"><input type="text" name="kegs[name]" value="<%= @kegs.name %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Image url: </td>
+              <td class="itemValue"><input type="text" name="kegs[image_url]" value="<%= @kegs.image_url %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Keg volume size ml: </td>
+              <td class="itemValue"><input type="text" name="kegs[keg_volume_size_ml]" value="<%= @kegs.keg_volume_size_ml %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Keg volume remaining ml: </td>
+              <td class="itemValue"><input type="text" name="kegs[keg_volume_remaining_ml]" value="<%= @kegs.keg_volume_remaining_ml %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Keg volume spilled ml: </td>
+              <td class="itemValue"><input type="text" name="kegs[keg_volume_spilled_ml]" value="<%= @kegs.keg_volume_spilled_ml %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Status: </td>
+              <td class="itemValue"><input type="text" name="kegs[status]" value="<%= @kegs.status %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Url: </td>
+              <td class="itemValue"><input type="text" name="kegs[url]" value="<%= @kegs.url %>"/></td>
+          </tr>
+          
+      </table>
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

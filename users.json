@@ -1,0 +1,62 @@
+{
+  "result": {
+    "users": [
+      {
+        "user": {
+          "username": "drew", 
+          "first_name": "", 
+          "last_name": "", 
+          "url": "/drinkers/drew/", 
+          "image": {
+            "url": "/media/cache/pics/e8e7-img_ross_resized.png", 
+            "thumbnail_url": "/media/cache/pics/e8e7-img_ross_thumbnail.png", 
+            "user_id": "drew", 
+            "original_url": "/media/pics/e8e7-img_ross.jpg", 
+            "created_date": "2012-05-23T21:31:19Z"
+          }, 
+          "is_active": true, 
+          "is_superuser": true, 
+          "is_staff": true, 
+          "last_login": "2012-05-25T18:18:27Z", 
+          "email": "drew@beenverified.com", 
+          "date_joined": "2012-05-18T18:54:49Z"
+        }
+      }, 
+      {
+        "user": {
+          "username": "Glenn", 
+          "first_name": "", 
+          "last_name": "", 
+          "url": "/drinkers/Glenn/", 
+          "is_active": true, 
+          "is_superuser": false, 
+          "is_staff": false, 
+          "last_login": "2012-05-23T21:39:38Z", 
+          "email": "", 
+          "date_joined": "2012-05-23T21:39:38Z"
+        }
+      }, 
+      {
+        "user": {
+          "username": "Ross", 
+          "first_name": "", 
+          "last_name": "", 
+          "url": "/drinkers/Ross/", 
+          "image": {
+            "url": "/media/cache/pics/ac94-img_ross_resized.png", 
+            "thumbnail_url": "/media/cache/pics/ac94-img_ross_thumbnail.png", 
+            "user_id": "Ross", 
+            "original_url": "/media/pics/ac94-img_ross.jpg", 
+            "created_date": "2012-05-23T21:45:54Z"
+          }, 
+          "is_active": true, 
+          "is_superuser": false, 
+          "is_staff": false, 
+          "last_login": "2012-05-23T21:45:18Z", 
+          "email": "", 
+          "date_joined": "2012-05-23T21:39:18Z"
+        }
+      }
+    ]
+  }
+}

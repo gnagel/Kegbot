@@ -1,7 +1,7 @@
 <div data-role="page">
 
 	<div data-role="header" data-position="inline">
-    <h1>Drinks</h1>
+    <h1>Kegses</h1>
     <a href="<%= Rho::RhoConfig.start_path %>" class="ui-btn-left" data-icon="home" data-direction="reverse" <%= "data-ajax='false'" if is_bb6 %>>
       Home
     </a>
@@ -12,11 +12,11 @@
 
   <div data-role="content">
     <ul data-role="listview">
-      <% @drinks.each do |drink| %>
+      <% @kegses.each do |kegs| %>
       
           <li>
-            <a href="<%= url_for :action => :show, :id => drink.object %>">
-              <%= drink.duration %>
+            <a href="<%= url_for :action => :show, :id => kegs.object %>">
+              <%= kegs.name %>
             </a>
           </li>
       

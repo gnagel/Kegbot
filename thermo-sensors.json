@@ -1,0 +1,16 @@
+{
+  "result": {
+    "sensors": [
+      {
+        "nice_name": "", 
+        "sensor_name": "kegboard.thermo-a50000040b101928", 
+        "id": "1"
+      }, 
+      {
+        "nice_name": "", 
+        "sensor_name": "kegboard.thermo-f90000040ae89128", 
+        "id": "3"
+      }
+    ]
+  }
+}
