@@ -1,0 +1,25 @@
+#sdk: "/usr/local/rvm/gems/ruby-1.9.2-p290/gems/rhodes-3.3.3"
+sdkversion: 3.3.3
+name: Kegbot
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.kegbot
+  BundleURLScheme: kegbot
+wp:
+  productid: 26ad3a10-8820-012f-ec46-48bcc8d76ec3
+symbian:
+  uid: 0xe9903536
+android:
+  version: 2.1
+extensions:
+  - json
+  - another-extension
