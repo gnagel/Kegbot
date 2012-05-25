@@ -17,9 +17,10 @@ iphone:
 wp:
   productid: 26ad3a10-8820-012f-ec46-48bcc8d76ec3
 symbian:
-  uid: 0xe9903536
+  uid: 3918542134
 android:
-  version: 2.1
+  version: 4.0
+  emulator: 4.0.3
 extensions:
   - json
   - another-extension

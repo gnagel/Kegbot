@@ -10,10 +10,15 @@
     <% end %>
   </div>
 
+    <%= link_to "Drinks", :controller => :DrinkController, :action => :index %>
+    <%= link_to "Drinks", :controller => :Drinks, :action => :index %>
+
   <div data-role="content">
     <table>
       <tr>
-        <td class="recordLabel">Add links here...</td>
+        <td class="recordLabel">Add links here...
+        <%= link_to "Drinks", :controller => :Drinks, :action => :index %>
+        </td>
       </tr>
     </table>
   </div>

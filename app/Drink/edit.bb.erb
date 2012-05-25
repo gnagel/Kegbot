@@ -1,0 +1,39 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :show, :id => @drink.object %>
+    <h1>Edit <%= @drink.duration%></h1>
+    <%= link_to "Delete", :action => :delete, :id => @drink.object %>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+      <input type="hidden" name="id" value="<%= @drink.object %>"/>
+      <table>
+          
+          <tr>
+              <td class="itemLabel">Duration: </td>
+              <td class="itemValue"><input type="text" name="drink[duration]" value="<%= @drink.duration %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Volume ml: </td>
+              <td class="itemValue"><input type="text" name="drink[volume_ml]" value="<%= @drink.volume_ml %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Pour time: </td>
+              <td class="itemValue"><input type="text" name="drink[pour_time]" value="<%= @drink.pour_time %>"/></td>
+          </tr>
+          
+          <tr>
+              <td class="itemLabel">Url: </td>
+              <td class="itemValue"><input type="text" name="drink[url]" value="<%= @drink.url %>"/></td>
+          </tr>
+          
+      </table>
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+
+</div>

@@ -13,10 +13,13 @@
         <a href="<%= url_for :controller => :Settings, :action => :login %>" class="ui-btn-right" data-icon="star">Login</a>
     <% end %>
   </div>
+  
 
   <div data-role="content">
     <ul data-role="listview">
-      <li><a href="#">Add link here...</a></li>
+      <li>
+      <a href="<%= url_for :controller => :Drink, :action => :index %>" class="ui-btn-right" data-icon="star">Drinks</a>
+      </li>
     </ul>
   </div>
 

@@ -1,0 +1,40 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>New <%= @drink.title %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+      <input type="hidden" name="id" value="<%= @drink.object %>"/>
+
+      
+          <div data-role="fieldcontain">
+            <label for="drink[duration]" class="fieldLabel">Duration</label>
+            <input type="text" id="drink[duration]" name="drink[duration]" <%= placeholder("Duration") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="drink[volume_ml]" class="fieldLabel">Volume ml</label>
+            <input type="text" id="drink[volume_ml]" name="drink[volume_ml]" <%= placeholder("Volume ml") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="drink[pour_time]" class="fieldLabel">Pour time</label>
+            <input type="text" id="drink[pour_time]" name="drink[pour_time]" <%= placeholder("Pour time") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="drink[url]" class="fieldLabel">Url</label>
+            <input type="text" id="drink[url]" name="drink[url]" <%= placeholder("Url") %> />
+          </div>
+      
+
+      <input type="submit" value="Create"/>
+    </form>
+  </div>
+
+</div>
