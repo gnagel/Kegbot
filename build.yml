@@ -21,6 +21,8 @@ symbian:
 android:
   version: 4.0
   emulator: 4.0.3
+  android_title: 0
+  orientation: portrait
 extensions:
   - json
   - another-extension
