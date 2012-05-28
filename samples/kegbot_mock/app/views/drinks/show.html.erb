@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Status:</b>
+  <%= @drink.status %>
+</p>
+
+<p>
+  <b>Volume ml:</b>
+  <%= @drink.volume_ml %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @drink.url %>
+</p>
+
+<p>
+  <b>Ticks:</b>
+  <%= @drink.ticks %>
+</p>
+
+<p>
+  <b>Session:</b>
+  <%= @drink.session_id %>
+</p>
+
+<p>
+  <b>Our tie:</b>
+  <%= @drink.our_tie %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @drink.duration %>
+</p>
+
+<p>
+  <b>Keg:</b>
+  <%= @drink.keg_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_drink_path(@drink) %> |
+<%= link_to 'Back', drinks_path %>

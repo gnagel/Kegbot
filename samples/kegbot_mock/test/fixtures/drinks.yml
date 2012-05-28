@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  status: MyString
+  volume_ml: 
+  url: MyString
+  ticks: 1
+  session_id: MyString
+  our_tie: MyString
+  duration: 1
+  keg_id: MyString
+
+two:
+  status: MyString
+  volume_ml: 
+  url: MyString
+  ticks: 1
+  session_id: MyString
+  our_tie: MyString
+  duration: 1
+  keg_id: MyString

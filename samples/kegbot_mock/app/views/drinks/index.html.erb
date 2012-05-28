@@ -1,0 +1,37 @@
+<h1>Listing drinks</h1>
+
+<table>
+  <tr>
+    <th>Status</th>
+    <th>Volume ml</th>
+    <th>Url</th>
+    <th>Ticks</th>
+    <th>Session</th>
+    <th>Our tie</th>
+    <th>Duration</th>
+    <th>Keg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @drinks.each do |drink| %>
+  <tr>
+    <td><%= drink.status %></td>
+    <td><%= drink.volume_ml %></td>
+    <td><%= drink.url %></td>
+    <td><%= drink.ticks %></td>
+    <td><%= drink.session_id %></td>
+    <td><%= drink.our_tie %></td>
+    <td><%= drink.duration %></td>
+    <td><%= drink.keg_id %></td>
+    <td><%= link_to 'Show', drink %></td>
+    <td><%= link_to 'Edit', edit_drink_path(drink) %></td>
+    <td><%= link_to 'Destroy', drink, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Drink', new_drink_path %>

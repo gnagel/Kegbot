@@ -1,0 +1,49 @@
+<%= form_for(@drink) do |f| %>
+  <% if @drink.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drink.errors.count, "error") %> prohibited this drink from being saved:</h2>
+
+      <ul>
+      <% @drink.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :volume_ml %><br />
+    <%= f.text_field :volume_ml %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :ticks %><br />
+    <%= f.number_field :ticks %>
+  </div>
+  <div class="field">
+    <%= f.label :session_id %><br />
+    <%= f.text_field :session_id %>
+  </div>
+  <div class="field">
+    <%= f.label :our_tie %><br />
+    <%= f.text_field :our_tie %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.number_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :keg_id %><br />
+    <%= f.text_field :keg_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
